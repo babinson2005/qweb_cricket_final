@@ -6,10 +6,10 @@ function Home() {
   const title = "About Us";
   const content = [
     {
-      text: "We are a student run cricket club. Our goal is to connect like-minded individuals who share a love or cricket and play competitive and friendly matches and tournaments. We promote team building and encourage healthy competition."
+      text: "We are a student run cricket club. Our goal is to connect like-minded individuals who share a love or cricket and play competitive and friendly matches and tournaments. We promote team building and encourage healthy competition.",
     },
     {
-      text: "Lets unite, empower, and elevate our cricket game together!"
+      text: "Lets unite, empower, and elevate our cricket game together!",
     },
     {
       text: "To stay tuned for updates, events, and the latest new in the world of cricket follow us on instagram at ",
@@ -18,7 +18,8 @@ function Home() {
         text: "@queens_cricket!",
       },
     },
-        {text: "@queens_cricket!",}];
+    { text: "@queens_cricket!" },
+  ];
   return (
     <>
       <div className="home-container">
@@ -32,12 +33,19 @@ function Home() {
       </div>
       <AboutSection title={title} content={content} />
       <div className="reg-box">
-        <AboutSection title={'temporary about section'} content={[{text:'image will be located here'}]} />
+        <AboutSection
+          title={"temporary about section"}
+          content={[
+            {
+              text: "",
+              image: "/home_background.png", // Use leading slash and correct extension for public folder
+              alt: "Description of image",
+            },
+          ]}
+        />
         <MemberForm />
       </div>
-      
     </>
   );
-};
+}
 export default Home;
-
