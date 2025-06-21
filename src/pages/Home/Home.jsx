@@ -22,7 +22,14 @@ function Home() {
   ];
   return (
     <>
-      <div className="home-container">
+      <div
+        className="home-container"
+        style={{
+          backgroundImage: "url(/home_background.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="overlay"></div>
         <div className="content">
           <p className="title">QUEEN'S CRICKET CLUB</p>
@@ -32,17 +39,7 @@ function Home() {
         </div>
       </div>
       <AboutSection title={title} content={content} />
-      <div className="reg-box">
-        <AboutSection
-          title={"temporary about section"}
-          content={[
-            {
-              text: "",
-              image: "/home_background.png", // Use leading slash and correct extension for public folder
-              alt: "Description of image",
-            },
-          ]}
-        />
+      <div className="reg-box center">
         <MemberForm />
       </div>
     </>
