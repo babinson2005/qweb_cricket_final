@@ -17,7 +17,7 @@ export default function Navbar() {
       <header>
         {/* cricket club logo */}
         <div className="navbar-logo">
-          <img src="public\logo.png" alt="vite" />
+          <img src="public\logo.png" />
         </div>
         {/* Navbar links when on larger screen sizes, directs to each page */}
         <nav className={`navbar-container ${isOpen ? "open" : ""}`}>

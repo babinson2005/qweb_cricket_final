@@ -22,14 +22,7 @@ function Home() {
   ];
   return (
     <>
-      <div
-        className="home-container"
-        style={{
-          backgroundImage: "url(/home_background.png)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <div className="home-container">
         <div className="overlay"></div>
         <div className="content">
           <p className="title">QUEEN'S CRICKET CLUB</p>
